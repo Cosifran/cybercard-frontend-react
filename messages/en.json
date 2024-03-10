@@ -1,5 +1,100 @@
 {
-    "Index": {
-      "title": "horse force!"
-    }
+  "Index": {
+    "title": "horse force!"
+  },
+  "Header": {
+    "button": "Contact"
+  },
+  "Section1": {
+    "title": "Are you looking for more than just a trip? Discover Coibox.",
+    "subtitle": "In a world dominated by routine, do you crave an experience that accelerates your heart?",
+    "button": "Sign up Now!"
+  },
+  "Section2": {
+    "firstTitle": "Get ready for an unforgettable journey!",
+    "firstCard": "At Coibox, we connect travelers from all over the world with ideal accommodations and delightful adventures.",
+    "secondCard": "The best accommodations for adults",
+    "secondTitle": "Interested in generating new income streams?",
+    "description": "Coibox opens the doors for you. By offering your home as a shared accommodation and becoming a Host Escort, enriching your life and that of others.",
+    "firstButton": "Sign up for more information",
+    "thirdCardTitle": "Discounts that Ignite Passions!",
+    "thirdCardDescriptions": "Enjoy exclusive offers by joining Coibox. We transform every trip into a unique, accessible, and full of memorable moments experience.",
+    "fourCardTitle": "Explore Secrets with Local Flavor",
+    "fourCardDescriptions": "Discover the best adult entertainment venues and a community that redefines pleasure and connection.",
+    "secondButton": "Sign up for more information"
+  },
+  "Section3": {
+    "subtitle": "Benefit",
+    "title": "For Guests",
+    "titleSecundary": "Get ready for an epic adventure!",
+    "firstCardTitle": "Discover accommodations for adults:",
+    "firstCardDescription": "Each stay becomes a memorable experience, with host escorts ensuring exceptional companionship.",
+    "secundaryCardTitle": "New and fun way to explore local culture:",
+    "secundaryCardDescription": "Let our hosts guide you through an authentic local experience.",
+    "threeCardTitle": "Delicious options at your fingertips:",
+    "threeCardDescription": "Filter according to your desires, fetishes, and budget to find that perfect match.",
+    "fourCardTitle": "Exclusive Services:",
+    "fourCardDescription": "Car service, secure bookings, and penalty-free cancellations are included."
+  },
+  "Section4":{
+    "subtitle": "Benefit",
+    "title": "For Host Escorts:",
+    "titleSecundary": "Monetize your space and spread love",
+    "firstCardTitle": "Freedom and flexibility:",
+    "firstCardDescription": "Manage your service your way and on your own time. Whether you own or rent your property, you can participate and turn it into a unique space",
+    "secundaryCardTitle": "Unique experience for each visit:",
+    "secundaryCardDescription": "Customize your guests' stay, ensuring a memorable and unique experience for both",
+    "threeCardTitle": "Grow your bank account:",
+    "threeCardDescription": "Monetize your home by hosting travelers from around the world and earn extra income in dollars.",
+    "fourCardTitle": "Become a personalized tour guide:",
+    "fourCardDescription": "Offer not only your company but also authentic experiences to travelers.",
+    "Button": "Sign up for more information"
+  },
+  "Section5":{
+    "title": "Frequently Asked Questions about Coibox",
+    "description": "COIBOX is the world's leading adult accommodation platform, connecting travelers seeking unique accommodations and experiences with escorts."
+  },
+  "AccordionTab": {
+    "tItem1":"What is COIBOX?",
+    "dItem1": "COIBOX is the world’s leading adult-vacation rental platform, connecting travelers seeking unique accommodations and experiences with host escorts.",
+    "tItem2": "What is a host escort?",
+    "dItem2": "Is a person over 18 years of age, who owns or rents a property, who provides lodging and personalized companionship to guests, enriching their travel experience.",
+    "tItem3": "What services do host escorts offer?",
+    "dItem3": "The services offered by host escorts on the Coibox platform are an all-inclusive package, which includes:",
+    "listPoint1": "Accommodation in the host escort's home.",
+    "listPoint2": "Escort.",
+    "listPoint3": "Local experience guide.",
+    "listPoint4": "Use of vehicle. (Optional).",
+    "tItem4": "Who can be a host escort?",
+    "dItem4": "Anyone over the age of 18, of any sexuality, who owns or rents a property suitable for hosting guests.",
+    "tItem5": "How many listings can I create?",
+    "dItem5": "You can create one listing per person and property. However, it is possible to add listings for housemates or harem if you share your space.",
+    "tItem6": "What is a roommate?",
+    "dItem6": "A roommate is someone who shares your property with you and participates in offering services on COIBOX, allowing you to expand your hosting capacity.",
+    "tItem7": "How many rooms must I have in order to join a roommate?",
+    "dItem7": "You must have at least two rooms available, one for you and one for your Roommate, sharing common areas.",
+    "tItem8": "Can I offer more than one property for service?",
+    "dItem8": "No, you can only register one property at a time per escort host, unless you upgrade to a new property. But, with one property you already have an adult hosting facility.",
+    "tItem9": "Who sets the price of my hosting service?",
+    "dItem9": "You decide the price, based on the quality of your accommodation, your friendliness and the unique experience you offer.",
+    "tItem10": "When and how will I receive my payments?",
+    "dItem10": "Payments are credited every 24 hours after confirmation of accommodation by the guest, and can be withdrawn at any time.",
+    "tItem11":  "Can I include my car in the service?",
+    "dItem11": "Yes, it is possible to include the use of your vehicle as part of the service.",
+    "tItem12": "Can you limit my bookings to my accommodation?",
+    "dItem12": "There will be no limitations on your bookings unless you repeatedly provide substandard services.",
+    "tItem13": "Can I be a host escort if I have a job?",
+    "dItem13": "Yes, you can be an escort host while working another job. The key is to manage your time and communicate clearly with your guests."
+  },
+  "FooterSection": {
+    "folmularyTitle": "Registration Form",
+    "inputName": "Enter your name",
+    "inputEmail": "Enter your email address",
+    "inputPhone": "Enter your phone number",
+    "checkAceptTerm": "I accept the terms",
+    "validCheck": "You must accept the terms",
+    "buttonFormulary": "Send now",
+    "subtitleContact": "Contact",
+    "titleContact": "Contact us at"
   }
+}

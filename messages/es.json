@@ -1,5 +1,101 @@
 {
-    "Index": {
-      "title": "Caballo de fuerza!"
-    }
+  "Index": {
+    "title": "Caballo de fuerza!"
+  },
+  "Header": {
+    "button": "Contacto"
+  },
+  "Section1": {
+    "title": " ¿Buscas algo más que un viaje? Descubre Coibox",
+    "subtitle": "En un mundo dominado por la rutina, ¿Ansías una experiencia que acelere tu corazón?",
+    "button": "¡Registrate Ahora!"
+  },
+  "Section2": {
+    "firstTitle": "¡Prepárate para un viaje inolvidable!",
+    "firstCard": " En Coibox, conectamos a viajeros de todo el mundo con hospedajes ideales y aventuras deliciosas.",
+    "secondCard": "Los mejores alojamientos para adultos",
+    "secondTitle": "¿Interesado en generar nuevas formas de ingreso?",
+    "description": "Coibox te abre las puertas. Al ofrecer tu hogar como alojamiento compartido y convertirte en Escort Anfitrión(a), enriqueciendo tu vida y la de otros.",
+    "firstButton": "Regístrate para tener más información",
+    "thirdCardTitle": "¡Descuentos que Encienden Pasiones!",
+    "thirdCardDescriptions": " Disfruta de ofertas exclusivas al unirte a Coibox. Transformamos cada viaje en una experiencia única, accesible y llena de momentos memorables.",
+    "fourCardTitle": "Explora Secretos con Sabor Local",
+    "fourCardDescriptions": "Descubre los mejores lugares de entretenimientos para adulto y una comunidad que redefine el placer y la conexión.",
+    "secondButton": "Regístrate para tener más información"
+  },
+  "Section3": {
+    "subtitle": "Beneficio",
+    "title": "Para los Huéspedes:",
+    "titleSecundary": "¡Prepárate para una aventura épica!",
+    "firstCardTitle": "Descubre hospedajes para adultos:",
+    "firstCardDescription": "Cada  estancia se convierte en una experiencia memorable, con escorts anfitriones  que garantizan una compañía excepcional.",
+    "secundaryCardTitle": "Nueva y divertida forma de explorar la cultura local:",
+    "secundaryCardDescription": "Deja que nuestros anfitriones te guíen en una experiencia local  auténtica.",
+    "threeCardTitle": "Opciones deliciosas a tu alcance:",
+    "threeCardDescription": "Filtra según tus deseos, fetiches y presupuesto para dar con ese match  perfecto. ",
+    "fourCardTitle": "Servicios Exclusivos:",
+    "fourCardDescription": "Se incluye servicio  de automóvil, reservas seguras y cancelaciones sin penalidades. "
+  },
+  "Section4": {
+    "subtitle": "Beneficio",
+    "title": "Para los Escort Anfitrion:",
+    "titleSecundary": "Monetiza tu espacio y difunde amor",
+    "firstCardTitle": "Libertad y flexibilidad:",
+    "firstCardDescription": "Administra  tu servicio a tu manera y en tu propio tiempo. Ya sea que tengas o alquiles  tu propiedad, puedes participar y convertirla en un espacio único.",
+    "secundaryCardTitle": "Experiencia única para cada visita:",
+    "secundaryCardDescription": "Personaliza la estadía de tus huéspedes, asegurando una experiencia memorable yúnica para ambos.",
+    "threeCardTitle": "Haz crecer tu cuenta bancaria:",
+    "threeCardDescription": "Monetiza tu hogar recibiendo viajeros de todo el mundo y gana ingresos extra  en dólares. ",
+    "fourCardTitle": "Conviértete en guía turístico personalizado:",
+    "fourCardDescription": "Ofrece no solo tu compañía sino también experiencias auténticas  a viajeros. ",
+    "Button": "Regístrate para tener más información"
+  },
+  "Section5": {
+    "title": "Preguntas Frecuentes sobre Coibox",
+    "description": "COIBOX es la plataforma líder de alojamiento para adultos a nivel mundial, que conecta aviajeros en busca de hospedajes y experiencias únicas con escorts."
+  },
+  "AccordionTab": {
+    "tItem1": "1. ¿Qué es COIBOX?",
+    "dItem1": "COIBOX es la plataforma líder de alojamiento para adultos a nivel mundial, que conecta a viajeros en busca de hospedajes y experiencias únicas con escorts anfitriones.",
+    "tItem2": "¿Qué es un escort anfitrión?",
+    "dItem2": "Es una persona con +18 años de edad, propietaria o arrendataria de una propiedad, que brinda alojamiento y acompañamiento personalizado a los huéspedes, enriqueciendo su experiencia de viaje.",
+    "tItem3": "¿Qué servicios ofrece los/las escort anfitriónes/as?",
+    "dItem3": "El servicios que ofrecen los/las escorts anfitriones/as en la plataforma de Coibox es un paquete todo incluido, conlleva: ",
+    "listPoint1": "Alojamiento en el hogar del escort anfitrión.",
+    "listPoint2": "Escort.",
+    "listPoint3": "Guía de experiencia local.",
+    "listPoint4": "Uso de vehículo. (es opcional).",
+    "tItem4": "¿Quién puede ser escort anfitrión?",
+    "dItem4": "Cualquier persona mayor de edad, de cualquier sexualidad, que posea o alquile una propiedad adecuada para alojar huéspedes.",
+    "tItem5": "¿Cuántas publicidades puedo crear?",
+    "dItem5": "Puedes crear una publicidad por persona y propiedad. Sin embargo, es posible añadir publicidades de compañeros de casa o harem si compartes tu espacio.",
+    "tItem6": "¿Qué es un compañero/a de casa o Roommate?",
+    "dItem6": "Es alguien que comparte la propiedad contigo y participa en ofrecer servicios en COIBOX, permitiendo ampliar la capacidad de alojamiento.",
+    "tItem7": "¿Para poder unir un compañero/a de vivienda cuántas habitaciones debo tener?",
+    "dItem7": "Debes tener al menos dos habitaciones disponibles, una para ti y otra para tu Roommate, compartiendo áreas comunes.",
+    "tItem8": "¿Puedo ofrecer más de una propiedad para el servicio?",
+    "dItem8": "No, solo puedes registrar una propiedad a la vez por escort anfitrión, a menos que actualices a una nueva propiedad. Pero, con una propiedad ya tienes un centro de hospedaje para adultos.",
+    "tItem9": "¿Quién establece el precio de mi servicio de hospedaje?",
+    "dItem9": "Tú decides el precio, basándote en la calidad de tu alojamiento, tu amabilidad y la experiencia única que ofreces.",
+    "tItem10": "¿Cuándo y cómo recibiré mis pagos?",
+    "dItem10": "Los pagos se acreditan cada 24 horas después de la confirmación del alojamiento por parte del huésped, y puedes retirarlos cuando lo desees.",
+    "tItem11":  "¿Puedo incluir mi automóvil en el servicio?",
+    "dItem11": "Sí, es posible incluir el uso de tu vehículo como parte del servicio.",
+    "tItem12": "¿Pueden limitarme las reservas a mi alojamiento?",
+    "dItem12": "No habrá limitaciones a tus reservas a menos que brindes servicios deficientes de forma reiterada.",
+    "tItem13": "¿Puedo ser escort anfitrión si tengo un trabajo?",
+    "dItem13": "Sí, puedes ser escort anfitrión compatibilizando con otro empleo. La clave es gestionar tu tiempo y comunicarte claramente con tus huéspedes."
+
+  },
+  "FooterSection": {
+    "folmularyTitle": "Formulario de Registro",
+    "inputName": "Ingresa tu nombre",
+    "inputEmail": "Ingresa tu correo electrónico ",
+    "inputPhone": "Ingresa tu numero de telefono",
+    "checkAceptTerm": "Acepto los terminos",
+    "validCheck": "Debe aceptar los terminos",
+    "buttonFormulary": " Enviar ahora",
+    "subtitleContact": "Contacto",
+    "titleContact": "Contáctanos"
   }
+}
