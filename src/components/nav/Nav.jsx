@@ -35,12 +35,12 @@ export default function Nav() {
           id="navbarText">
           <ul className="navbar-nav">
             <li className="nav-item d-content">
-              <Link href={"#"} className="btn btn-primary" role="button">
+              <Link href={"#footerSection"} className="btn btn-primary" role="button">
                 {t("button")}
               </Link>
             </li>
             <li className="nav-item d-lg-none my-3">
-              <Link href={"#"} className="text-black" role="button">
+              <Link href={"#footerSection"} className="text-black" role="button">
                 {t("button")}
               </Link>
             </li>

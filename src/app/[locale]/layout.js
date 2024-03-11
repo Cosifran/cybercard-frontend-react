@@ -1,6 +1,6 @@
 //Import bootstrap
-import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
+import "@/styles/globals.css";
 import "react-phone-number-input/style.css";
 import BootstrapClient from "@/components/BoostrapClient";
 // Supports weights 100-900

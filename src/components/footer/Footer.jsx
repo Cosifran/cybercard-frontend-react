@@ -20,12 +20,17 @@ export default function Footer({
   const [numberPhone, setNumberphone] = useState();
   const [validated, setValidated] = useState(false);
   const formRef = useRef();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('')
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    //validación del los campos del formulario
+    if (name == "" || email == "" || numberPhone == "") {
+      return;
+    }
     try {
+      //Petición post para registrar al usuario
       const response = await fetch("/api/register", {
         method: "POST",
         body: JSON.stringify({
@@ -35,7 +40,7 @@ export default function Footer({
         }),
       });
 
-      if(response.ok) console.log('Registrado')
+      if (response.ok) console.log("Registrado");
     } catch (error) {}
   };
 
@@ -64,11 +69,11 @@ export default function Footer({
     };
   }, []);
   return (
-    <footer className="bg-orange w-100">
+    <footer className="bg-orange w-100" id="footerSection">
       <div className="container py-lg-5">
         <div className="row py-4 py-lg-5">
           <div className="col-12 col-lg-6">
-            <div className="card my-3 my-lg-0 p-5">
+            <div className="card my-3 my-lg-0 p-3 p-lg-5">
               <div className="row">
                 <div className="col-12">
                   <p className="title-formulary fw-bold">{formularyTitle}</p>

@@ -10,6 +10,7 @@ import {useTranslations} from "next-intl";
 import {CircleSvg} from "@/utils/svgIcons";
 //Import own components
 import Card from "@/components/card/Card";
+import Carrucel from "@/components/swiper/carrucel";
 import Accordion from "@/components/accordion/Accordion";
 import CardSecundary from "@/components/card/CardSecundary";
 
@@ -101,10 +102,7 @@ export default function Index() {
                 alt="modelo scort gafas"></Image>
             </div>
             <div className="col-6 d-none d-lg-flex my-2">
-              <Image
-                className="img-fluid animate-image-entry"
-                src={modeloSecundaria}
-                alt="modelo scort gafas"></Image>
+             <Carrucel/>
             </div>
             <div className="col-lg-6 my-lg-auto mt-4 ">
               <h3 className="text-white fw-bold">
