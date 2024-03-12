@@ -73,7 +73,7 @@ export default function Index() {
                 <div className="col-12 col-lg-6">
                   <div className="card p-4 border-end">
                     <div className="card-body  mt-2">
-                      <CircleSvg color="#8C0F0F" />
+                      <CircleSvg color="#dc4d4a" />
                       <p className="fw-bold pt-4">
                         {sectionSecond("firstCard")}
                       </p>
@@ -132,7 +132,7 @@ export default function Index() {
         <div className="container">
           <div className="row mt-2 pt-2 mt-lg-5 pt-lg-5">
             <div className="col-12 text-center">
-              <p className="text-uppercase">{sectionThree("subtitle")}</p>
+              <p className="text-uppercase fw-bold textBenefficeSize">{sectionThree("subtitle")}</p>
               <h2 className="fw-bold">{sectionThree("title")}</h2>
               <h2 className="fw-bold d-none d-lg-block">
                 {sectionThree("titleSecundary")}
@@ -180,7 +180,7 @@ export default function Index() {
         <div className="container pb-lg-5">
           <div className="row  mt-lg-2 pt-2 pt-lg-5">
             <div className="col-12 text-center mt-lg-5 mt-2 mb-lg-0">
-              <p className="text-uppercase text-white">
+              <p className="text-uppercase text-white textBenefficeSize fw-bold">
                 {sectionFour("subtitle")}
               </p>
               <h2 className="fw-bold text-white">{sectionFour("title")}</h2>

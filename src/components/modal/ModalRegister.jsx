@@ -18,8 +18,10 @@ export default function ModalRegister({
   const [numberPhone, setNumberphone] = useState();
   const [validated, setValidated] = useState(false);
   const formRef = useRef();
+  const modalRef = useRef(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [scortAfitrion, setScortAfitrion] = useState("");
 
   useEffect(() => {
     const form = formRef.current;
@@ -49,7 +51,7 @@ export default function ModalRegister({
   const onSubmit = async (e) => {
     e.preventDefault();
     //validación del los campos del formulario
-    if (name == "" || email == "" || numberPhone == "") {
+    if (name == "" || email == "" || numberPhone == "" || scortAfitrion == "") {
       return;
     }
     try {
@@ -60,11 +62,28 @@ export default function ModalRegister({
           name,
           email,
           phone: numberPhone,
+          scort: scortAfitrion,
+          cuestion: "",
         }),
       });
 
-      if (response.ok) console.log("Registrado");
-    } catch (error) {}
+      if (response.ok) {
+        setName("");
+        setEmail("");
+        setNumberphone("");
+        setScortAfitrion("");
+        console.log("Registrado");
+      }
+
+      // Cierra el modal haciendo clic en el botón de cierre del modal
+      const closeModalButton =
+        modalRef.current.querySelector("#closeModalButton");
+      if (closeModalButton) {
+        closeModalButton.click();
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <>
@@ -83,6 +102,7 @@ export default function ModalRegister({
       </button>
 
       <div
+        ref={modalRef}
         className="modal fade"
         id="exampleModal"
         aria-labelledby="exampleModalLabel"
@@ -148,7 +168,11 @@ export default function ModalRegister({
                       <select
                         id="validationCustom04"
                         className="form-select"
-                        aria-label="Default select example">
+                        aria-label="Default select example"
+                        value={scortAfitrion}
+                        onChange={(e) => {
+                          setScortAfitrion(e.target.value);
+                        }}>
                         <option defaultValue>
                           Selecciona Huesped o Escort Anfitrión
                         </option>
@@ -160,6 +184,7 @@ export default function ModalRegister({
                     <div className="row pt-4 g-0 px-3">
                       <div className="col-6">
                         <button
+                          id="closeModalButton"
                           type="button"
                           className="btn btn-secondary btn-lg w-100"
                           data-bs-dismiss="modal">

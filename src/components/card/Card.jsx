@@ -33,7 +33,7 @@ export default function Card() {
           <div className="card-body  mt-2">
             <div className="row">
               <div className="col-12 col-lg-2 my-auto">
-                <CircleSvg color="#8C0F0F" />
+                <CircleSvg color="#dc4d4a" />
               </div>
               <div className="col-12 py-4 py-lg-0 col-lg-10">
                 <h3 className="text-black fw-bold pt-lg-4">

@@ -146,6 +146,7 @@ p {
   font-size: 1.25rem;
 }
 
+
 .btn-primary {
   --bs-btn-color: #fff !important;
   background-color: black;
@@ -279,6 +280,10 @@ p {
   font-size: 1.5rem;
 }
 
+.textBenefficeSize{
+  font-size: 1.75rem;
+}
+
 
 .d-content {
   display: -webkit-inline-box;
@@ -317,6 +322,10 @@ p {
   background:  #dc4d4a !important;
 }
 
+.img-container-fill{
+  object-fit: cover !important ;
+}
+
 .animate-nav {
   animation: animation-header ease-out forwards;
   animation-timeline: scroll(root);
@@ -333,6 +342,20 @@ p {
   animation: reveal-img-entry linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
+}
+
+.animate-scale{
+  transition: transform 0.35s ease-in-out;
+
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+@keyframes animation-svg {
+  to {
+    scale: 0.3;
+  }
 }
 
 @keyframes animation-header {
@@ -398,8 +421,13 @@ p {
     font-size: 1.875rem;
   }
 
+
   .text-big {
     font-size: 1.5rem;
+  }
+
+  .textBenefficeSize{
+    font-size: 1.25rem;
   }
 
   .d-content {

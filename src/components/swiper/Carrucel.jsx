@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
-import modeloSecundaria from "../../lib/img/modelo-secundaria.png";
+import modeloModal from "../../lib/img/modeloModal.jpg";
+import modeloModal2 from "../../lib/img/modeloModal2.jpg";
+import modeloSecundaria from "../../lib/img/modelo-secundaria.jpg";
 import {useEffect, useState} from "react";
 // Import Swiper React components
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -25,7 +27,7 @@ export default function Carrucel() {
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
-           autoplay={{
+          autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
@@ -36,12 +38,28 @@ export default function Carrucel() {
           className="mySwiper">
           <SwiperSlide>
             <Image
-              className="img-fluid w-100"
+              width={624}
+              height={631}
+              className=" w-100 img-container-fill"
               src={modeloSecundaria}
               alt="modelo scort gafas"></Image>
           </SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>
+            <Image
+              width={624}
+              height={631}
+              className=" w-100 img-container-fill"
+              src={modeloModal}
+              alt="modelo scort gafas"></Image>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              width={624}
+              height={631}
+              className=" w-100 img-container-fill"
+              src={modeloModal2}
+              alt="modelo scort gafas"></Image>
+          </SwiperSlide>
         </Swiper>
       )}
     </>
