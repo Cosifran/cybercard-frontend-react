@@ -16,6 +16,16 @@ const ResgisterShema = new Schema({
     required: true,
     trim: true,
   },
+  scort: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  cuestion: {
+    type: String,
+    required: false,
+    trim: true,
+  },
 });
 
 const Register = models.Register || model("Register", ResgisterShema);

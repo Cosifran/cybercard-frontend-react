@@ -13,13 +13,14 @@ import Card from "@/components/card/Card";
 import Carrucel from "@/components/swiper/carrucel";
 import Accordion from "@/components/accordion/Accordion";
 import CardSecundary from "@/components/card/CardSecundary";
-
+import ModalRegister from "@/components/modal/ModalRegister";
 export default function Index() {
   const sectionOne = useTranslations("Section1");
   const sectionSecond = useTranslations("Section2");
-  const sectionThree = useTranslations("Section3")
-  const sectionFour = useTranslations("Section4")
-  const sectionFive = useTranslations("Section5")
+  const sectionThree = useTranslations("Section3");
+  const sectionFour = useTranslations("Section4");
+  const sectionFive = useTranslations("Section5");
+  const FooterTraslate = useTranslations("FooterSection");
   return (
     <>
       <section className="container mt-2 pt-2 mt-lg-5 pt-lg-5">
@@ -37,18 +38,17 @@ export default function Index() {
             <p className="my-4 fw-medium text-big">
               {sectionOne("subtitle")} ❤️‍🔥
             </p>
-            <Link
-              href={"#"}
-              className="btn btn-primary btn-lg py-3 fw-bold mt-3 d-content "
-              role="button">
-              {sectionOne("button")}
-            </Link>
-            <Link
-              href={"#"}
-              className="btn btn-primary btn-sm py-3 fw-bold mb-4 rounded d-lg-none"
-              role="button">
-              {sectionOne("button")}
-            </Link>
+
+            <ModalRegister
+              formularyTitle={FooterTraslate("folmularyTitle")}
+              inputName={FooterTraslate("inputName")}
+              inputEmail={FooterTraslate("inputEmail")}
+              inputPhone={FooterTraslate("inputPhone")}
+              buttonFormulary={FooterTraslate("buttonFormulary")}
+              contactSubtitle={FooterTraslate("subtitleContact")}
+              contactTitle={FooterTraslate("titleContact")}
+              buttonText={sectionOne("button")}
+            />
           </article>
           <article className="col-12 col-lg-6 d-none d-lg-block text-end ">
             <Image
@@ -102,7 +102,7 @@ export default function Index() {
                 alt="modelo scort gafas"></Image>
             </div>
             <div className="col-6 d-none d-lg-flex my-2">
-             <Carrucel/>
+              <Carrucel />
             </div>
             <div className="col-lg-6 my-lg-auto mt-4 ">
               <h3 className="text-white fw-bold">
@@ -135,7 +135,7 @@ export default function Index() {
               <p className="text-uppercase">{sectionThree("subtitle")}</p>
               <h2 className="fw-bold">{sectionThree("title")}</h2>
               <h2 className="fw-bold d-none d-lg-block">
-              {sectionThree("titleSecundary")}
+                {sectionThree("titleSecundary")}
               </h2>
             </div>
           </div>
@@ -153,9 +153,7 @@ export default function Index() {
                 borderColor={"border-white"}
                 textColor={"text-white"}
                 title={sectionThree("secundaryCardTitle")}
-                descriptions={
-                  sectionThree("secundaryCardDescription")
-                }
+                descriptions={sectionThree("secundaryCardDescription")}
               />
             </div>
             <div className="col-12 col-lg-6 mb-2 mb-lg-0">
@@ -164,18 +162,14 @@ export default function Index() {
                 borderColor={"border-white"}
                 textColor={"text-white"}
                 title={sectionThree("threeCardTitle")}
-                descriptions={
-                  sectionThree("threeCardDescription")
-                }
+                descriptions={sectionThree("threeCardDescription")}
               />
               <CardSecundary
                 bgCard={"bg-black"}
                 borderColor={"border-white"}
                 textColor={"text-white"}
                 title={sectionThree("fourCardTitle")}
-                descriptions={
-                  sectionThree("fourCardDescription")
-                }
+                descriptions={sectionThree("fourCardDescription")}
               />
             </div>
           </div>
@@ -186,10 +180,12 @@ export default function Index() {
         <div className="container pb-lg-5">
           <div className="row  mt-lg-2 pt-2 pt-lg-5">
             <div className="col-12 text-center mt-lg-5 mt-2 mb-lg-0">
-              <p className="text-uppercase text-white">{sectionFour("subtitle")}</p>
+              <p className="text-uppercase text-white">
+                {sectionFour("subtitle")}
+              </p>
               <h2 className="fw-bold text-white">{sectionFour("title")}</h2>
               <h2 className="fw-bold text-white d-none d-lg-block">
-              {sectionFour("titleSecundary")}
+                {sectionFour("titleSecundary")}
               </h2>
             </div>
           </div>
@@ -200,18 +196,14 @@ export default function Index() {
                 borderColor={"border-black"}
                 textColor={"text-black"}
                 title={sectionFour("firstCardTitle")}
-                descriptions={
-                  sectionFour("firstCardDescription")
-                }
+                descriptions={sectionFour("firstCardDescription")}
               />
               <CardSecundary
                 bgCard={"bg-white"}
                 borderColor={"border-black"}
                 textColor={"text-black"}
                 title={sectionFour("secundaryCardTitle")}
-                descriptions={
-                  sectionFour("secundaryCardDescription")
-                }
+                descriptions={sectionFour("secundaryCardDescription")}
               />
             </div>
             <div className="col-12 col-lg-6">
@@ -219,19 +211,15 @@ export default function Index() {
                 bgCard={"bg-white"}
                 borderColor={"border-black"}
                 textColor={"text-black"}
-                title={ sectionFour("threeCardTitle")}
-                descriptions={
-                  sectionFour("fourCardDescription")
-                }
+                title={sectionFour("threeCardTitle")}
+                descriptions={sectionFour("fourCardDescription")}
               />
               <CardSecundary
                 bgCard={"bg-white"}
                 borderColor={"border-black"}
                 textColor={"text-black"}
                 title={sectionFour("threeCardTitle")}
-                descriptions={
-                  sectionFour("fourCardTitle")
-                }
+                descriptions={sectionFour("fourCardTitle")}
               />
             </div>
           </div>
@@ -252,9 +240,7 @@ export default function Index() {
             <div className="col-12 col-lg-6 mt-2 mt-lg-0">
               <p className="text-uppercase ">Faq</p>
               <h3 className="fw-bold">{sectionFive("title")}</h3>
-              <p>
-                {sectionFive("description")}
-              </p>
+              <p>{sectionFive("description")}</p>
             </div>
             <div className="col-12 col-lg-6 mb-4 mb-lg-0">
               <Accordion />
