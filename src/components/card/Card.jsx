@@ -4,8 +4,11 @@ import Link from "next/link";
 import {useTranslations} from "next-intl";
 //Import svg
 import {CircleSvg} from "@/utils/svgIcons";
+//Import own components
+import ModalRegister from "../modal/ModalRegister";
 export default function Card() {
   const sectionSecond = useTranslations("Section2");
+  const FooterTraslate = useTranslations("FooterSection");
   return (
     <div className="row mt-lg-5 g-0">
       <div className="col-12 col-lg-6">
@@ -48,12 +51,13 @@ export default function Card() {
         </div>
       </div>
       <div className="col-12 my-4 mt-lg-5 mb-lg-5 text-center">
-        <Link
-          href={"#"}
-          className="btn btn-primary btn-lg py-2 fw-bold"
-          role="button">
-         {sectionSecond("secondButton")}
-        </Link>
+        <ModalRegister
+          inputName={FooterTraslate("inputName")}
+          inputEmail={FooterTraslate("inputEmail")}
+          inputPhone={FooterTraslate("inputPhone")}
+          buttonFormulary={FooterTraslate("buttonFormulary")}
+          buttonText={sectionSecond("secondButton")}
+        />
       </div>
     </div>
   );

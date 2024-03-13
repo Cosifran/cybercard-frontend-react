@@ -21,31 +21,19 @@ export default function Footer({
   const [email, setEmail] = useState("");
   const [cuestionAdd, setCuestionAdd] = useState("");
   const [scortAfitrion, setScortAfitrion] = useState("");
+  const [alert, setAlert] = useState(null);
 
-  useEffect(() => {
-    const form = formRef.current;
-
-    form.addEventListener("submit", (event) => {
-      if (!form.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      setValidated(true);
-
-      form.classList.add("was-validated");
+  //funcion para mostrar alerta
+  const getAlertFn = (msg, category) => {
+    setAlert({
+      msg,
+      category,
     });
 
-    return () => {
-      form.removeEventListener("submit", (event) => {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-
-        form.classList.add("was-validated");
-      });
-    };
-  }, []);
+    setTimeout(() => {
+      setAlert(null);
+    }, 3000);
+  };
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -57,6 +45,7 @@ export default function Footer({
       cuestionAdd == "" ||
       scortAfitrion == "Selecciona Huesped o Escort Anfitrión"
     ) {
+      getAlertFn("Todos los campos son obligatorios", "alert-danger");
       return;
     }
     try {
@@ -72,15 +61,17 @@ export default function Footer({
         }),
       });
 
-      if (response.ok){
-        setName('')
-        setEmail('')
-        setNumberphone('')
-        setCuestionAdd('')
-        setScortAfitrion('')
-        console.log("Registrado")
+      if (response.ok) {
+        setName("");
+        setEmail("");
+        setNumberphone("");
+        setCuestionAdd("");
+        setScortAfitrion("");
+        getAlertFn("Registrado con exito", "alert-success");
       }
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -90,6 +81,7 @@ export default function Footer({
           <div className="col-12 col-lg-6">
             <div className="card my-3 my-lg-0 p-3 p-lg-5">
               <Formulary
+                alert={alert}
                 formularyTitle={formularyTitle}
                 showButton={true}
                 name={name}

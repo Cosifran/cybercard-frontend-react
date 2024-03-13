@@ -6,13 +6,10 @@ import PhoneInput from "react-phone-number-input";
 //Import react fuctions
 import {useEffect, useRef, useState} from "react";
 export default function ModalRegister({
-  formularyTitle,
   inputName,
   inputEmail,
   inputPhone,
   buttonFormulary,
-  contactTitle,
-  contactSubtitle,
   buttonText,
 }) {
   const [numberPhone, setNumberphone] = useState();
@@ -22,36 +19,25 @@ export default function ModalRegister({
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [scortAfitrion, setScortAfitrion] = useState("");
+  const [alert, setAlert] = useState(null);
 
-  useEffect(() => {
-    const form = formRef.current;
-
-    form.addEventListener("submit", (event) => {
-      if (!form.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      setValidated(true);
-
-      form.classList.add("was-validated");
+  //funcion para mostrar alerta
+  const getAlertFn = (msg, category) => {
+    setAlert({
+      msg,
+      category,
     });
 
-    return () => {
-      form.removeEventListener("submit", (event) => {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-
-        form.classList.add("was-validated");
-      });
-    };
-  }, []);
+    setTimeout(() => {
+      setAlert(null);
+    }, 3000);
+  };
 
   const onSubmit = async (e) => {
     e.preventDefault();
     //validación del los campos del formulario
     if (name == "" || email == "" || numberPhone == "" || scortAfitrion == "") {
+      getAlertFn("Todos los campos son obligatorios", "alert-danger");
       return;
     }
     try {
@@ -72,15 +58,16 @@ export default function ModalRegister({
         setEmail("");
         setNumberphone("");
         setScortAfitrion("");
-        console.log("Registrado");
+        getAlertFn("Registrado con exito", "alert-success");
       }
 
-      // Cierra el modal haciendo clic en el botón de cierre del modal
-      const closeModalButton =
-        modalRef.current.querySelector("#closeModalButton");
-      if (closeModalButton) {
-        closeModalButton.click();
-      }
+      setTimeout(() => {
+        const closeModalButton =
+          modalRef.current.querySelector("#closeModalButton");
+        if (closeModalButton) {
+          closeModalButton.click();
+        }
+      }, 1000);
     } catch (error) {
       console.log(error);
     }
@@ -127,6 +114,20 @@ export default function ModalRegister({
                     ref={formRef}
                     className="row g-4 needs-validation is-invalid"
                     noValidate>
+                    {alert && (
+                      <div className="col-12">
+                        <div
+                          className={`alert ${alert.category} alert-dismissible mb-0`}
+                          role="alert">
+                          <div>{alert.msg}</div>
+                          <button
+                            type="button"
+                            className="btn-close"
+                            data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                        </div>
+                      </div>
+                    )}
                     <div className="col-12">
                       <input
                         name="name"

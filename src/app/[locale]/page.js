@@ -40,13 +40,10 @@ export default function Index() {
             </p>
 
             <ModalRegister
-              formularyTitle={FooterTraslate("folmularyTitle")}
               inputName={FooterTraslate("inputName")}
               inputEmail={FooterTraslate("inputEmail")}
               inputPhone={FooterTraslate("inputPhone")}
               buttonFormulary={FooterTraslate("buttonFormulary")}
-              contactSubtitle={FooterTraslate("subtitleContact")}
-              contactTitle={FooterTraslate("titleContact")}
               buttonText={sectionOne("button")}
             />
           </article>
@@ -113,12 +110,13 @@ export default function Index() {
               </p>
 
               <div className="d-flex justify-content-center d-lg-block">
-                <Link
-                  href={"#"}
-                  className="btn btn-primary btn-lg fw-bold mb-4 mb-lg-0"
-                  role="button">
-                  {sectionSecond("firstButton")}
-                </Link>
+                <ModalRegister
+                  inputName={FooterTraslate("inputName")}
+                  inputEmail={FooterTraslate("inputEmail")}
+                  inputPhone={FooterTraslate("inputPhone")}
+                  buttonFormulary={FooterTraslate("buttonFormulary")}
+                  buttonText={sectionSecond("firstButton")}
+                />
               </div>
             </div>
           </div>
@@ -132,7 +130,9 @@ export default function Index() {
         <div className="container">
           <div className="row mt-2 pt-2 mt-lg-5 pt-lg-5">
             <div className="col-12 text-center">
-              <p className="text-uppercase fw-bold textBenefficeSize">{sectionThree("subtitle")}</p>
+              <p className="text-uppercase fw-bold textBenefficeSize">
+                {sectionThree("subtitle")}
+              </p>
               <h2 className="fw-bold">{sectionThree("title")}</h2>
               <h2 className="fw-bold d-none d-lg-block">
                 {sectionThree("titleSecundary")}
@@ -224,12 +224,13 @@ export default function Index() {
             </div>
           </div>
           <div className="col-12 mb-lg-5 text-center">
-            <Link
-              href={"#"}
-              className="btn btn-primary my-4 my-lg-0 btn-lg py-2 fw-bold"
-              role="button">
-              {sectionFour("Button")}
-            </Link>
+            <ModalRegister
+              inputName={FooterTraslate("inputName")}
+              inputEmail={FooterTraslate("inputEmail")}
+              inputPhone={FooterTraslate("inputPhone")}
+              buttonFormulary={FooterTraslate("buttonFormulary")}
+              buttonText={sectionFour("Button")}
+            />
           </div>
         </div>
       </section>

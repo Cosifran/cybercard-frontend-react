@@ -4,6 +4,7 @@ export default function Formulary({
   formularyTitle,
   showButton,
   formRef,
+  alert,
   name,
   email,
   cuestionAdd,
@@ -29,6 +30,20 @@ export default function Formulary({
           ref={formRef}
           className="row g-4 needs-validation is-invalid"
           noValidate>
+          {alert && (
+            <div className="col-12">
+              <div
+                className={`alert ${alert.category} alert-dismissible mb-0`}
+                role="alert">
+                <div>{alert.msg}</div>
+                <button
+                  type="button"
+                  className="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"></button>
+              </div>
+            </div>
+          )}
           <div className="col-12">
             <input
               name="name"
