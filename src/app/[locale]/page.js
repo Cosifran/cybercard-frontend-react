@@ -4,6 +4,14 @@ import Image from "next/image";
 import modeloPrincipal from "../../../public/img/modelo-principal.png";
 import modeloSecundaria from "../../../public/img/modelo-secundaria.png";
 import modeloResponsive from "../../../public/img/modelo-responsive.png";
+//img carrucel
+import modeloModal from "../../lib/img/modeloModal.jpg";
+import modeloModal2 from "../../lib/img/modeloModal2.jpg";
+import modeloModal3 from "../../lib/img/modelo-secundaria.jpg";
+import modeloCarrucel4 from "../../lib/img/modeloCarrucel4.jpg"
+import modeloCarrucel5 from "../../lib/img/modeloCarrucel5.jpg"
+import modeloCarrucel6 from "../../lib/img/modeloCarrucel6.jpg"
+
 //Import traslate
 import {useTranslations} from "next-intl";
 //Import svg
@@ -91,15 +99,12 @@ export default function Index() {
           </div>
 
           <div className="row mt-lg-5 g-lg-5">
-            <div className="col-12 d-flex d-lg-none my-2 justify-content-center">
-              <Image
-                src={modeloSecundaria}
-                width={324}
-                height={328}
-                alt="modelo scort gafas"></Image>
-            </div>
-            <div className="col-6 d-none d-lg-flex my-2">
-              <Carrucel />
+            <div className="col-12 col-lg-6  my-2">
+              <Carrucel
+                modeloModal={modeloModal}
+                modeloModal2={modeloModal2}
+                modeloModal3={modeloModal3}
+              />
             </div>
             <div className="col-lg-6 my-lg-auto mt-4 ">
               <h3 className="text-white fw-bold">
@@ -242,8 +247,17 @@ export default function Index() {
               <p className="text-uppercase ">Faq</p>
               <h3 className="fw-bold">{sectionFive("title")}</h3>
               <p>{sectionFive("description")}</p>
+              <div className="row d-none d-lg-block">
+                <div className="col-12">
+                  <Carrucel
+                    modeloModal={modeloCarrucel4}
+                    modeloModal2={modeloCarrucel5}
+                    modeloModal3={modeloCarrucel6}
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0">
+            <div className="col-12 col-lg-6 mb-4 my-lg-auto">
               <Accordion />
             </div>
           </div>

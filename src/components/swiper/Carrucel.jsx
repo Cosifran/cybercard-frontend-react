@@ -1,8 +1,5 @@
 "use client";
 import Image from "next/image";
-import modeloModal from "../../lib/img/modeloModal.jpg";
-import modeloModal2 from "../../lib/img/modeloModal2.jpg";
-import modeloSecundaria from "../../lib/img/modelo-secundaria.jpg";
 import {useEffect, useState} from "react";
 // Import Swiper React components
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -15,7 +12,11 @@ import "swiper/css/navigation";
 // import required modules
 import {Autoplay, Pagination, Navigation} from "swiper/modules";
 
-export default function Carrucel() {
+export default function Carrucel({
+  modeloModal,
+  modeloModal2,
+  modeloModal3,
+}) {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Carrucel() {
               width={624}
               height={631}
               className=" w-100 img-container-fill"
-              src={modeloSecundaria}
+              src={modeloModal3}
               alt="modelo scort gafas"></Image>
           </SwiperSlide>
           <SwiperSlide>
