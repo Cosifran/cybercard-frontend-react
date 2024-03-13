@@ -93,6 +93,9 @@
     "inputPhone": "Enter your phone number",
     "checkAceptTerm": "I accept the terms",
     "validCheck": "You must accept the terms",
+    "selectPlacholder": "Which user category would you like to join?",
+    "selectValue1": "Escort host",
+    "selectValue2": "Guest",
     "buttonFormulary": "Send now",
     "subtitleContact": "Contact",
     "titleContact": "Contact us at"

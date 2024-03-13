@@ -57,6 +57,9 @@ export default function Card() {
           inputPhone={FooterTraslate("inputPhone")}
           buttonFormulary={FooterTraslate("buttonFormulary")}
           buttonText={sectionSecond("secondButton")}
+          selectPlaceholder={FooterTraslate("selectPlacholder")}
+          selectValue1= {FooterTraslate("selectValue2")}
+          selectValue2={FooterTraslate("titleContact")}
         />
       </div>
     </div>

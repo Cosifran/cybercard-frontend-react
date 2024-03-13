@@ -13,6 +13,9 @@ export default function Formulary({
   inputName,
   inputEmail,
   inputPhone,
+  selectPlaceholder,
+  selectValue1,
+  selectValue2,
   buttonFormulary,
   setName,
   setEmail,
@@ -91,10 +94,10 @@ export default function Formulary({
                 setScortAfitrion(e.target.value);
               }}>
               <option defaultValue>
-                Selecciona Huesped o Escort Anfitrión
+                {selectPlaceholder}
               </option>
-              <option value="Scort anfitrion">Scort anfitrion</option>
-              <option value="Huesped">Huesped</option>
+              <option value="Scort anfitrion">{selectValue1}</option>
+              <option value="Huesped">{selectValue2}</option>
             </select>
           </div>
 

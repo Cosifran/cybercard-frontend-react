@@ -53,6 +53,9 @@ export default function Index() {
               inputPhone={FooterTraslate("inputPhone")}
               buttonFormulary={FooterTraslate("buttonFormulary")}
               buttonText={sectionOne("button")}
+              selectPlaceholder={FooterTraslate("selectPlacholder")}
+              selectValue1= {FooterTraslate("selectValue2")}
+              selectValue2={FooterTraslate("titleContact")}
             />
           </article>
           <article className="col-12 col-lg-6 d-none d-lg-block text-end ">
@@ -121,6 +124,9 @@ export default function Index() {
                   inputPhone={FooterTraslate("inputPhone")}
                   buttonFormulary={FooterTraslate("buttonFormulary")}
                   buttonText={sectionSecond("firstButton")}
+                  selectPlaceholder={FooterTraslate("selectPlacholder")}
+                  selectValue1= {FooterTraslate("selectValue2")}
+                  selectValue2={FooterTraslate("titleContact")}
                 />
               </div>
             </div>
@@ -235,6 +241,9 @@ export default function Index() {
               inputPhone={FooterTraslate("inputPhone")}
               buttonFormulary={FooterTraslate("buttonFormulary")}
               buttonText={sectionFour("Button")}
+              selectPlaceholder={FooterTraslate("selectPlacholder")}
+              selectValue1= {FooterTraslate("selectValue2")}
+              selectValue2={FooterTraslate("titleContact")}
             />
           </div>
         </div>

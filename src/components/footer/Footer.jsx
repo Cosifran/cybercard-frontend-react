@@ -11,6 +11,9 @@ export default function Footer({
   inputEmail,
   inputPhone,
   buttonFormulary,
+  selectPlaceholder,
+  selectValue1,
+  selectValue2,
   contactTitle,
   contactSubtitle,
 }) {
@@ -92,6 +95,9 @@ export default function Footer({
                 numberPhone={numberPhone}
                 inputEmail={inputEmail}
                 inputPhone={inputPhone}
+                selectPlaceholder={selectPlaceholder}
+                selectValue1={selectValue1}
+                selectValue2={selectValue2}
                 buttonFormulary={buttonFormulary}
                 setEmail={setEmail}
                 formRef={formRef}

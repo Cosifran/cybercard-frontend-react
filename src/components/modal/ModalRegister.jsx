@@ -10,6 +10,9 @@ export default function ModalRegister({
   inputEmail,
   inputPhone,
   buttonFormulary,
+  selectPlaceholder,
+  selectValue1,
+  selectValue2,
   buttonText,
 }) {
   const [numberPhone, setNumberphone] = useState();
@@ -175,10 +178,10 @@ export default function ModalRegister({
                           setScortAfitrion(e.target.value);
                         }}>
                         <option defaultValue>
-                          Selecciona Huesped o Escort Anfitrión
+                        {selectPlaceholder}
                         </option>
-                        <option value="Scort anfitrion">Scort anfitrion</option>
-                        <option value="Huesped">Huesped</option>
+                        <option value="Scort anfitrion">{selectValue1}</option>
+                        <option value="Huesped">{selectValue2}</option>
                       </select>
                     </div>
 

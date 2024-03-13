@@ -94,7 +94,10 @@
     "inputPhone": "Ingresa tu numero de telefono",
     "checkAceptTerm": "Acepto los terminos",
     "validCheck": "Debe aceptar los terminos",
-    "buttonFormulary": " Enviar ahora",
+    "buttonFormulary": "Enviar ahora",
+    "selectPlacholder": "¿En qué categoría de usuario te gustaría unirte?",
+    "selectValue1": "Escort anfitrión",
+    "selectValue2": "Huesped",
     "subtitleContact": "Contacto",
     "titleContact": "Contáctanos"
   }

@@ -33,6 +33,9 @@ export default function LocaleLayout({children, params: {locale}}) {
             buttonFormulary={FooterTraslate("buttonFormulary")}
             contactSubtitle={FooterTraslate("subtitleContact")}
             contactTitle={FooterTraslate("titleContact")}
+            selectPlaceholder={FooterTraslate("selectPlacholder")}
+            selectValue1= {FooterTraslate("selectValue2")}
+            selectValue2={FooterTraslate("titleContact")}
           />
         </div>
       </body>
