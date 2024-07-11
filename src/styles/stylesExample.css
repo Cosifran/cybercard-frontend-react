@@ -1,0 +1,118 @@
+@media (hover: hover) {
+  @supports (filter: blur()) {
+    .button:before,
+    .ct-button:before,
+    .entry-tags a:before,
+    .added_to_cart:before,
+    [type="submit"]:before,
+    .wp-element-button:before,
+    .wp-block-button__link:before,
+    button.regform-button:before,
+    button[class*="ajax"]:before,
+    .woocommerce button.button:before,
+    .woocommerce-message .showlogin:before,
+    .woocommerce-message .restore-item:before,
+    .forminator-ui[data-design="none"] .forminator-button:before,
+    .fluentform .ff-el-group button.ff-btn:before {
+      display: var(--theme-button-shadow, block);
+      position: absolute;
+      z-index: -1;
+      content: "";
+      inset-inline: 10px;
+      inset-block: 12px 0;
+      opacity: 0;
+      border-radius: inherit;
+      background: inherit;
+      transition: opacity 0.2s ease;
+      filter: blur(11px);
+    }
+
+    @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+      .button:hover,
+      .ct-button:hover,
+      .entry-tags a:hover,
+      .added_to_cart:hover,
+      [type="submit"]:hover,
+      .wp-element-button:hover,
+      .wp-block-button__link:hover,
+      button.regform-button:hover,
+      button[class*="ajax"]:hover,
+      .woocommerce button.button:hover,
+      .woocommerce-message .showlogin:hover,
+      .woocommerce-message .restore-item:hover,
+      .forminator-ui[data-design="none"] .forminator-button:hover,
+      .fluentform .ff-el-group button.ff-btn:hover {
+        background: white !important;
+        border: 1px solid black !important;
+        color: black !important;
+      }
+
+      .button::after,
+      .ct-button::after,
+      .entry-tags a::after,
+      .added_to_cart::after,
+      [type="submit"]::after,
+      .wp-element-button::after,
+      .wp-block-button__link::after,
+      button.regform-button::after,
+      button[class*="ajax"]::after,
+      .woocommerce button.button::after,
+      .woocommerce-message .showlogin::after,
+      .woocommerce-message .restore-item::after,
+      .forminator-ui[data-design="none"] .forminator-button::after,
+      .fluentform .ff-el-group button.ff-btn::after {
+        content: "";
+        background: #fff; /* color de fondo hover */
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: 100%;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+
+      .button:hover::after,
+      .ct-button:hover::after,
+      .entry-tags a:hover::after,
+      .added_to_cart:hover::after,
+      [type="submit"]:hover::after,
+      .wp-element-button:hover::after,
+      .wp-block-button__link:hover::after,
+      button.regform-button:hover::after,
+      button[class*="ajax"]:hover::after,
+      .woocommerce button.button:hover::after,
+      .woocommerce-message .showlogin:hover::after,
+      .woocommerce-message .restore-item:hover::after,
+      .forminator-ui[data-design="none"] .forminator-button:hover::after,
+      .fluentform .ff-el-group button.ff-btn:hover::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+
+      .button:hover:before,
+      .ct-button:hover:before,
+      .entry-tags a:hover:before,
+      .added_to_cart:hover:before,
+      [type="submit"]:hover:before,
+      .wp-element-button:hover:before,
+      .wp-block-button__link:hover:before,
+      button.regform-button:hover:before,
+      button[class*="ajax"]:hover:before,
+      .woocommerce button.button:hover:before,
+      .woocommerce-message .showlogin:hover:before,
+      .woocommerce-message .restore-item:hover:before,
+      .forminator-ui[data-design="none"] .forminator-button:hover:before,
+      .fluentform .ff-el-group button.ff-btn:hover:before {
+        opacity: 0.8;
+      }
+    }
+  }
+}
